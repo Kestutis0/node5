@@ -1,0 +1,36 @@
+{{#if z}}
+Info apie klienta {{x}}
+{{else}}
+Tokio ID nera
+{{/if}}
+
+
+{{!-- masyvo rodymas --}}
+{{array}}
+
+{{!-- masyvo paleidimas cikle --}}
+{{#if array}}
+    <ul>
+        {{#each array}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+
+
+{{#if object}}
+    <ul>
+        {{#each object}}
+            <li>{{vardas}} {{pavarde}}</li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+
+<ul>
+    {{#with salis}}
+        <li>{{pavadinimas}}</li>
+         <li>{{sostine}}</li>
+    {{/with}}
+</ul>
